@@ -16,12 +16,23 @@ cursor: pointer;
 
 #map-container .location #icon {
     position: absolute;
-    top: -25px;
-    left: -25px;
+    top: -20px;
+    left: -20px;
     width: 50px;
     height: 50px;
     object-fit: contain;
+    animation-name: icon-scale;
+    animation-duration: 1s;
     }
+
+@keyframes icon-scale {
+    0% {
+        transform:scale(0.1);
+    }
+    100% {
+        transform:scale(1.0);
+    }
+}
 #map-container .location.active {
 background: blue;
 }
@@ -32,4 +43,13 @@ left: 320px;
 #map-container .location#obc_2_test {
 top: 350px;
 left: 130px;
+}
+
+/* Img animation effects */
+
+
+
+img:hover#icon{
+    transition-duration: 0.5s;
+    transform:scale(1.5);
 }
