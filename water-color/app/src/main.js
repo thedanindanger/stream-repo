@@ -6,7 +6,8 @@ $(document).ready(function () {
     $(".location").click(function() {
         // checks location active class, adds 'active' if not
       if (!$(this).hasClass("active")) {
-        $(".location.active").removeClass("active");
+        //$(".location.active").removeClass("active");
+        //$(this).empty();
         $(this).addClass("active")
         //console.log($(this));
 
@@ -19,7 +20,7 @@ $(document).ready(function () {
       } else {
         $(this).empty();
         //Allows only one icon TODO: Test with $(this) to remove class only of clicked
-        $(".location.active").removeClass("active");
+        $(this).removeClass("active");
       }
     });
   });
@@ -27,7 +28,10 @@ $(document).ready(function () {
 
 var business = {"obc": {
     "name": "Opening Bell Coffee",
-    "icon": "./img/OBCLogo.gif"}
+    "icon": "./img/OBCLogo.gif"},
+    "obc_2_test": {
+        "name": "Opening Bell Coffee",
+        "icon": "./img/OBCLogo.gif"}
 }
   
  function getBusinessIcon(bizId, source){
