@@ -4,18 +4,22 @@
 
 $(document).ready(function () {
     $(".location").click(function() {
-      if (!$(this).hasClass(".active")) {
+        // checks location active class, adds 'active' if not
+      if (!$(this).hasClass("active")) {
         $(".location.active").removeClass("active");
         $(this).addClass("active")
-      //} 
+        //console.log($(this));
 
-      //if (!$(this).has('img')){
-          let iconFile = getBusinessIcon($(this).attr('id'), business)
-          //appendChildImage(iconFile)
-          let img = document.createElement("img");
-          img.src = iconFile
-          img.id = "icon"
-          this.appendChild(img)
+        //Appends img icon given location div id
+        let iconFile = getBusinessIcon($(this).attr('id'), business)
+        let img = document.createElement("img");
+        img.src = iconFile
+        img.id = "icon"
+        this.appendChild(img)
+      } else {
+        $(this).empty();
+        //Allows only one icon TODO: Test with $(this) to remove class only of clicked
+        $(".location.active").removeClass("active");
       }
     });
   });
