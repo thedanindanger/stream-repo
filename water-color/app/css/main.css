@@ -1,25 +1,25 @@
 /* TODO: Change container size. Make responisve */
 #map-container {
-    width: 648px;
-    height: 413px;
-    border: 1px solid black;
+    width: 800px;
+    height: 700px;
+    /* border: 1px solid black; */
     position: relative;
 }
 #map-container .location {
 position: absolute;
-width: 10px;
-height: 10px;
-border-radius: 5px;
-background: black;
+width: 15px;
+height: 15px;
+border-radius: 10px;
+background: darkslategrey;
 cursor: pointer;
 }
 
 #map-container .location #icon {
     position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 50px;
-    height: 50px;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     animation-name: icon-scale;
     animation-duration: 1s;
@@ -34,17 +34,64 @@ cursor: pointer;
     }
 }
 #map-container .location.active {
-background: blue;
+background-color: transparent;
 }
 #map-container .location#obc {
-top: 225px;
-left: 320px;
-}
-#map-container .location#obc_2_test {
-top: 350px;
-left: 130px;
+top: 460px;
+left: 230px;
 }
 
+#map-container .location#alamo {
+top: 335px;
+left: 95px;
+}
+
+#map-container .location#gilleys {
+    top: 390px;
+    left: 150px;
+}
+
+#map-container .location#poor_davids_pub {
+    top: 415px;
+    left: 180px;
+}
+
+#map-container .location#four_corners {
+    top: 240px;
+    left: 390px;
+    }
+
+#map-container .location#industry_alley {
+    top: 540px;
+    left: 310px;
+    }
+
+#map-container .location#melted {
+    top: 545px;
+    left: 330px;
+    }
+
+
+#map-container .location#sandwich_hag {
+    top: 530px;
+    left: 420px;
+    }
+
+#map-container .location#south_side_on_lamar {
+    top: 485px;
+    left: 245px;
+    }
+
+
+#map-container .location#full_city_roosters {
+    top: 460px;
+    left: 465px;
+    }
+
+#map-container .location#lee_harveys {
+    top: 440px;
+    left: 455px;
+    } 
 /* Img animation effects */
 
 
