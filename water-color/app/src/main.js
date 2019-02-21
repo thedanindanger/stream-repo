@@ -3,12 +3,12 @@
 
 
 jQuery(document).ready(function ($) {
-    $(".location").click(function() {
+    jQuery(".location").click(function() {
         // checks location active class, adds 'active' if not
-      if (!$(this).hasClass("active")) {
+      if (!jQuery(this).hasClass("active")) {
         //$(".location.active").removeClass("active");
         //$(this).empty();
-        $(this).addClass("active")
+        jQuery(this).addClass("active")
         //console.log($(this));
 
         //Appends img icon given location div id
@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
         //img.class = "icon"
         //img.title = info.desc
         this.appendChild(img)
-        $(this).tooltipster({
+        jQuery(this).tooltipster({
           'theme': 'tooltipster-shadow',
           'distance': 1,
           'animation': 'grow',
@@ -31,10 +31,10 @@ jQuery(document).ready(function ($) {
           .tooltipster('content', info.desc)
           .tooltipster('open')
       } else {
-        $(this).empty();
+        jQuery(this).empty();
         //Allows only one icon TODO: Test with $(this) to remove class only of clicked
-        $(this).removeClass("active");
-        $(this).tooltipster('destroy');
+        jQuery(this).removeClass("active");
+        jQuery(this).tooltipster('destroy');
       }
     });
   });
