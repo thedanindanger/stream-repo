@@ -2,7 +2,7 @@
 //http://jsfiddle.net/8gDLV/1/
 
 
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     $(".location").click(function() {
         // checks location active class, adds 'active' if not
       if (!$(this).hasClass("active")) {
