@@ -52,8 +52,8 @@ var business = {
     "desc": "The Alamo Drafthouse Cinema is an American cinema chain founded in 1997 in Austin, Texas that is famous for its strict policy of requiring its audiences to maintain proper cinemagoing etiquette.",
     "icon": "./img/Alamo.png"},
   "gilleys": {
-    "name": "Gilley's - Also known as Southside Ballroom, is a badass venue for music performances and other events.",
-    "desc": "",
+    "name": "Gilley's",
+    "desc": "Gilley's - Also known as Southside Ballroom, is a badass venue for music performances and other events.",
     "icon": "./img/gilleys.png"},
   "melted": {
     "name": "Melted",
